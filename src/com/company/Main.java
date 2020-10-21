@@ -2,14 +2,18 @@ package com.company;
 
 /**
  * Class Main создан в обучающих целях
- * Method fact - считает факториал числа
- * Method abs - модуль числа
- * Method pow - возведение в степень
  * @author BadikovDA
  * @version 1.0.
  */
 
 public class Main{
+    /**
+     * Method 'fact' - создан для рассчёта факториала от числа
+     * Огранияения: рассчитан на диапозон
+     * от -2 147 483 648 до 2 147 483 647
+     * @param n -число, от которого берется факториал
+     * @return Возвращает значение факториала
+     */
     static int fact(int n){
         int result = 1;
         for (int i = 1; i <=n; i ++){
@@ -18,6 +22,12 @@ public class Main{
         return result;
     }
 
+    /**
+     * Method 'abs' - создан для вывода модуля числа
+     * Ограничения: ограничен диапазоном значений int
+     * @param n - число от которого берется модуль
+     * @return возвращает модуль от числа
+     */
     static int abs(int n) {
         if (n<0) {
             return -n;
@@ -27,6 +37,11 @@ public class Main{
         }
     }
 
+    /**
+     * Method 'pow' - создан для возведения числа в степень этого же числа
+     * @param n - число и степень, в которую будет возводиться число
+     * @return возвращает число ВОЗВЕДЕННОЕ в степень от этого числа
+     */
     public static int pow(int n){
         return n*n;
     }
